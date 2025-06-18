@@ -1,0 +1,39 @@
+Como rodar o projeto na sua maquina:
+
+Requisitos:
+
+- XAMPP
+- SQL Server
+- Um editor de texto (vscode)
+
+1. Primeiro de tudo, copie a pasta TCC e cole dentro da pasta htdocs.
+2. Depois, Clique no arquivo "script.sql" dentro da pasta TCC e Execute ele no SQL Server para poder criar o Banco do site e as tabelas.
+3. Agora, você vai acessar o arquivo "conexao.php" dentro da pasta do projeto, e lá, na função conectar() vai ter as seguintes variáveis:
+
+$local_server = "DESKTOP-77FVJ8D";
+$usuario_server = "sa";
+$senha_server = "123";
+
+Você vai substituir pelas informações da sua maquina no SQL Server, aquelas que aparece quando você abre ele:
+
+por exemplo, se for na maquina da escola vai ser mais ou menos isso:
+
+$local_server = "LAB02T-NUMERODAMAQUINA"
+$usuario_server = "sa";
+$senha_server = "etesp";
+
+na sua casa é só copiar as informações que aparecem naquela tela de login quando você abre o SQL Server:
+
+Nome do servidor: vai ser o $local server
+Logon: vai ser o $usuario_server
+Senha: vai ser o $senha_server
+
+Salve o arquivo conexao.ph
+
+Pronto! agora é só abrir o localhost na porta que você estiver utilizando e dar um /TCC
+
+Exemplo:
+
+http://localhost/TCC/
+
+http://localhost:8080/TCC/

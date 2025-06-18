@@ -1,0 +1,1172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* CSS Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+html, body {
+    height: 100%;
+    font-family: Inter, 'Segoe UI';
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* header */
+
+.logo {
+    width: 8rem;
+}
+
+header{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+
+.nav-link, .logout-button {
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: #00BF63;
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.login-button button {
+    background-color: #00BF63;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.login-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usuario-logado {
+    color: #fff;
+    font-size: 0.8125rem;
+    margin-bottom: 0.125rem;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.login-button button:hover {
+    opacity: 0.8;
+}
+
+.login-button button {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* home main */
+
+.home-main {
+    min-height: 100vh;
+}
+  
+  .home-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+  }
+
+  .first-section {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+
+  .second-section img {
+    max-width: 80%;
+  }
+  
+  .second-section {
+    max-width: 50%;
+    max-width: 60rem;
+  }
+
+  .third-section {
+    max-width: 50%;
+    max-width: 60rem;
+    display: flex;
+    justify-content: end;
+  }
+
+  .fourth-section h2 {
+    color: #00BF63;
+    padding-bottom: 1.5rem;
+  }
+  
+  .fourth-section p {
+    padding-top: 1rem;
+  }
+
+  .third-section img {
+    padding-right: 1rem;
+    max-width: 80%;
+    display: flex;
+  }
+
+  .fourth-section {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+  
+  .home-container h1 {
+    color: #00BF63;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .home-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .home-funcionalidades  {
+    padding: 0.5rem;
+  }
+
+  .home-funcionalidades li {
+    padding: 0.25rem;
+  }
+  
+
+
+  .dicas-main, .simulados-main, .feedbacks-main, .materias-main, .cadastra-dica-main {
+    min-height: 100vh; 
+ }
+
+/* cadastra feedback  */
+.nota-group {
+    gap: 1rem;
+    display: flex;
+    margin-top: 0.62rem;
+    padding: 0 0 .5rem;
+}
+
+.nota-input {
+    display: flex;
+    align-items: center;
+}
+
+
+.nota-input label {
+    padding: 0.25rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+/* .cadastra-dica-main */
+
+.cadastra-dica-main, .cadastra-feedback-main  {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #81b29a;
+}
+
+.cadastra-dica-container, .cadastra-feedback-container  {
+    border-radius: 0.5rem;
+    background-color: #fff;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* reset senha */
+
+.reset-senha-container {
+    width: 30%;
+    height: 30%;
+}
+
+.reset-senha-form {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+/* .reset-senha-button {
+} */
+
+.reset-senha-form input {
+    width: 100%;
+}
+
+.reset-senha-input {
+    width: 90%;
+}
+
+.cadastra-dica-form, .cadastra-feedback-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 1.1rem;
+}
+
+.cadastra-dica-form input,textarea {
+        margin: 0.6rem 0;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.625rem;
+        box-shadow: 1px 1px 1px, #00001c;
+        border: 1px solid grey;
+}
+
+.cadastra-feedback-form input,textarea {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.625rem;
+    box-shadow: 1px 1px 1px, #00001c;
+    border: 1px solid grey;
+}
+
+.nota-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cadastra-dica-form input:hover, textarea:hover {
+    background-color: #eeeeee75;
+}
+
+.cadastra-dica-form input:hover,textarea:focus-visible {
+    outline: 1px solid #00BF63;
+}
+
+.cadastra-dica-button-group, .cadastra-feedback-button-group {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.cancela-dica-button, .cancela-feedback-button {
+    margin-top: 0.5rem;
+    font-size: 0.93rem;
+    height: 3rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color:red;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cadastra-feedback-button, .cadastra-dica-button {
+    margin-top: 0.5rem;
+    font-size: 0.93rem;
+    height: 3rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #00BF63;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cadastra-dica-button:hover, .cancela-dica-button:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+/* reset senha main */
+
+
+/* dicas main */
+
+.dicas-main {
+    min-height: 100vh;
+    background-color: #81b29a;
+    height: 100%;
+}
+
+
+.cadastrar-dica {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 2.5rem;
+    background-color: red;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cadastrar-dica.gerar-pdf {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 2.75rem;
+    background-color: yellow;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cadastrar-dica.gerar-pdf a {
+    font-size: 0.93rem;
+    font-weight: 600;
+    color: black;
+
+}
+
+.cadastrar-dica a {
+    font-size: 0.93rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.cadastrar-dica:hover {
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.cadastrar-feedback {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 2.5rem;
+    background-color: red;
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.cadastrar-feedback a {
+    font-size: 0.93rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.cadastrar-feedback:hover {
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.titulo-dica {
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto-dica {
+    color: black;
+    cursor: default;
+    width:90%;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* simulados main */
+
+#matriz-referencia {
+    color: #00BF63;
+}
+
+#matriz-referencia:hover {
+    opacity: 0.8;
+}
+
+.ano-prova {
+    font-weight: bolder;
+}
+
+
+.modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 9.375rem;
+    width: 37.5rem;
+    height: 25rem;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px, #00001c;
+    border: 1px solid grey;
+  }
+
+/* cadastro main */
+
+.cadastro-main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #81b29a;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    
+    padding: 1rem;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro-login-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cadastro-login-button::before {
+    content: 'Já possuí uma conta?';
+    display: block;
+}
+
+.cadastro-login-button button{
+    font-weight: 500;
+    color: #fff;
+    background-color: #00BF63;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastro-login-button button:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background: #00BF63;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.cadastro-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.cadastro-input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.cadastro-input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px, #00001c;
+    border: 1px solid grey;
+}
+
+.cadastro-input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.cadastro-input-box input:focus-visible {
+    outline: 1px solid #00BF63;
+}
+
+.cadastro-input-box label, .gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.cadastro-input-box input:placeholder {
+    color: #000000b0;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input{
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button {
+    color: #fff;
+    font-size: 0.93rem;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 2.5rem;
+    background-color: #00BF63;
+    padding: 0.62rem;
+    border-radius: 0.3125rem;
+    cursor:pointer;
+}
+
+.continue-button button:hover {
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+/* login main */
+
+.login-input-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.login-input-box {
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.login-input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px, #00001c;
+    border: 1px solid grey;
+}
+
+.login-input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.login-input-box input:focus-visible {
+    outline: 1px solid #00BF63;
+}
+
+
+.login-input-box input:placeholder {
+    color: #000000b0;
+}
+
+.login-login-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-login-button::before {
+    content: 'Não tem conta?';
+    display: block;
+}
+
+.login-login-button button{
+    font-weight: 500;
+    color: #fff;
+    background-color: #00BF63;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-login-button button:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+#btn-esqueci-minha-senha {
+    align-self: flex-end;
+    font-size: 0.925rem;
+}
+
+#btn-esqueci-minha-senha a:hover {
+    color: #00BF63;
+    transition: all 0.4s;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    color: #fff;
+}
+
+#footer_content {
+    background-color: #24252a;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_logo{
+   margin-bottom: 0.75rem;
+   width: 15rem;
+}
+
+.footer-social-media {
+    display: flex;
+    gap:2rem;
+    margin-top: 1.5rem;
+}
+
+.footer-social-media .footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s;
+    font-size: 1.25rem;
+}
+
+.footer-social-media .footer-link:hover {
+    opacity: 0.8;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-list .footer-link {
+    color: #c9bebe;
+}
+
+.footer-list .footer-link:hover {
+    color: #00BF63;
+    transition: all 0.4s;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: #c9bebe;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #00BF63;
+    color: #fff;
+    padding: 0px 1.25rem;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0px 4px 4px 0px;
+}
+
+#input_group button:hover {
+    transition: all 0.4s;
+    opacity: 0.8;
+}
+
+#envelope {
+    width: 1.5rem;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+/* Materias Main */
+.materias-main, .simulados-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    background-color: #81b29a;
+}
+
+.container-accordion {
+    max-width: 100%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.area-de-estudo {
+    font-size: 1.3125rem;
+    margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    font-weight: 800;
+    color: #fff;
+}
+
+.chevron {
+    max-width: 1.5rem;
+    transform: rotate(90deg);
+    transition: transform .2s linear;
+}
+
+.accordion {
+    width: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    box-shadow: .3125rem .3125rem .3125rem rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header:hover {
+    color: #00BF63;
+    font-weight: bolder;
+    transition: all 0.4s;
+    opacity: 0.8;
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem; 
+    cursor: pointer;
+}
+
+.accordion-header span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-body{
+    color: #444;
+    font-size: 0.875rem;
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.2s ease, height 0.2s ease;
+}
+
+.accordion-body.active {
+    opacity: 1;
+    height: 100%;
+    padding: 0.3125rem 0rem;
+}
+
+.accordion-body.active p {
+    padding-left: 0.25rem;
+}
+
+.dicas-main {
+    background-color: #81b29a;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.autor-dica {
+    display: flex;
+    color: grey;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-family: inherit;
+    justify-content: space-between;
+}
+.autor-dica p {
+    font-size: 0.75rem;
+
+}
+
+
+.accordion-materias-list li, .accordion-provas-gabaritos-list li{
+    display: flex;
+    border: .0625rem solid black;
+    margin: 0.325rem;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+div.accordion-body ul.accordion-provas-gabaritos-list a {
+    display: flex;
+    line-height: 100%;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+
+div.accordion-body ul.accordion-materias-list a {
+    display: flex;
+    line-height: 100%;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.temas-anteriores {
+    padding-left: 0.5rem;
+}
+
+.accordion-materias-list li:hover, .accordion-provas-gabaritos-list li:hover {
+    background-color: #81b29a;
+    transition: all 0.4s;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+
+.accordion-header:has(+ .accordion-body.active) .chevron {
+    transform: rotate(0);
+}
+
+/* feedback main  */
+
+.feedbacks-main {
+    border: 1px solid #81b29a;
+    min-height: 100vh;
+    background-color: #81b29a;
+}
+
+.feedbacks-container {
+    margin-top: 1rem;
+    background-color: #81b29a;
+    height: 100%;
+}
+
+.feedback-header {
+    align-items: safe;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+}
+
+.nota-feedback {
+    font-weight: bolder;
+}
+
+.info-feedback {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.data-feedback {
+    font-size: 0.8125rem;
+    color: grey;
+}
+
+.user-feedback-img img {
+    max-width: 1.25rem;
+    background-color: rgb(201, 211, 211);
+    border-radius: 2rem;
+}
+
+
+@media screen and (max-width: 870px){
+/* cadastro,login-main  */
+
+.container {
+    min-width: 92vw;
+};
+}
+@media screen and (max-width: 730px){
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    /* header */
+    .nav-bar{
+        padding: 1.5rem 4 rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+    /* main */
+
+    .second-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* materias */
+
+    .materias-main {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    /* cadastra dicas */
+    .cadastra-dica-button-group {
+        height: 100%;
+        flex-direction: column;
+    }
+    .cadastra-dica-button {
+        margin: 0.5rem;
+        width: 90%;
+    } 
+    .cancela-dica-button{
+        margin: 0.5rem;
+        width: 90%;
+    }
+    
+    .cadastra-feedback-button-group {
+        height: 100%;
+        flex-direction: column;
+    }
+    .cadastra-feedback-button {
+        margin: 0.5rem;
+        width: 90%;
+    } 
+    .cancela-feedback-button{
+        margin: 0.5rem;
+        width: 90%;
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 500px){
+    /* footer */
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding:3rem 2rem;
+    }
+
+    .second-section, .third-section {
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1064px){
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 40%;    }
+    .form {
+        width: 100%;
+    }
+    .cadastro-input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+        padding-left: 0.5rem;
+    }
+    
+    .login-input-group {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 10rem;
+        max-height: 15rem;
+        margin-bottom: 2rem;
+    }
+
+    .login-input-box {
+        max-width: 15rem;
+        padding-right: 5rem;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+    
+}
