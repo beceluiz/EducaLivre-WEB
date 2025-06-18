@@ -4,10 +4,12 @@ Essa é a versão web do EducaLivre, uma plataforma de estudos pré-vestibular d
 
 ## 🌐 Tecnologias utilizadas
 
-- HTML, CSS e JavaScript
+- HTML, CSS e JavaScript (JQuery & ES6)
 - PHP (back-end)
 - SQLServer (banco de dados)
 - XAMPP (ambiente de desenvolvimento)
+- PHPMailer (envio de emails)
+- dompdf (gerar pdf)
 
 ## ✨ Funcionalidades
 
