@@ -45,14 +45,17 @@ function criaAdms() {
                 $usuarioExiste = $verificaExiste->fetchColumn();
                 if ($usuarioExiste == 0) {
                     $hashSenha = password_hash($usuario['senha'], PASSWORD_DEFAULT);
-                    $sql = $pdo->prepare("                        INSERT INTO usuario (nome, sobrenome, email, celular, senha, genero, dataCriacao, isAdmin)                        VALUES (:nome, :sobrenome, :email, :celular, :senha, :genero, :dataCriacao, 0)                    ");
+ $sql = $pdo->prepare("
+                    INSERT INTO usuario (nome, sobrenome, email, celular, senha, genero, dataCriacao, isAdmin)
+                    VALUES (:nome, :sobrenome, :email, :celular, :senha, :genero, :dataCriacao, :isAdmin)");
                     $sql->bindValue(':nome', $usuario['nome']);
                     $sql->bindValue(':sobrenome', $usuario['sobrenome']);
                     $sql->bindValue(':email', $usuario['email']);
                     $sql->bindValue(':celular', $usuario['celular']);
                     $sql->bindValue(':senha', $hashSenha);
                     $sql->bindValue(':genero', $usuario['genero']);
-                    $sql->bindValue(':dataCriacao', $usuario['dataCriacao']);                                        
+                    $sql->bindValue(':dataCriacao', $usuario['dataCriacao']);
+                    $sql->bindValue(':isAdmin', isset($usuario['isAdmin']) ? $usuario['isAdmin'] : 0);
                     $sql->execute();
                 }
             }
