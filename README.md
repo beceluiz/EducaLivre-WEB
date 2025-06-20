@@ -50,7 +50,7 @@ define('EMAIL_PASSWORD', 'sua-chave-do-app');
 ```
 > ⚠️ **Atenção:** Para isso funcionar, você deve ativar a autenticação em dois fatores no Gmail e gerar uma [chave de acesso para app](https://myaccount.google.com/apppasswords).
 
-🏁 4. Executar o script de inicialização
+### 🏁 4. Executar o script de inicialização
 Por fim, acesse a página inicial (home) do projeto no navegador. Isso irá acionar um script automático que completa a estrutura inicial do banco de dados com os dados básicos para funcionamento do sistema.
 
 >⚠️ **Importante:** Esse script só será executado se as etapas anteriores (conexão e importação do .sql) estiverem corretas. Certifique-se de que o banco está acessível e configurado corretamente.
